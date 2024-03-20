@@ -1,5 +1,4 @@
 
-
 ![image](https://github.com/g0dEngineer/AURA_AEON_HUMAN/blob/main/screenshots/aura_human_face_rig_eye_movement_movie__annotated.gif)
 
 
@@ -112,7 +111,7 @@ c. 700 mb space.
 # Dev Stack
 Fusion of several tech stacks
 
-1. Hack: Custom blender3d 2.91 plugin to integrate standard py3.7 torch conversational pretra large language ai model into blender ux
+1. Hack: Custom blender3d 2.91 plugin to integrate standard py3.7 torch conversational pretrained large language ai model into blender ux
 2. Tensorflow 2d Ai fake human generator, based on pretrained weights
 3. Ai 2d photo to 3d model program (Aeon Human character)
 4. Face it landmark + armature generator  (faceit-beta-v2.3.8 beta)
@@ -121,16 +120,20 @@ Fusion of several tech stacks
 7. Python Text To Sound Generator 
 8. Bind function via face it, so when rig moves, armature and bones move. Also enables Pose Lib creation which is fed to lipsynch rhubarb. Do faceitbind, then repeat hack 5. Bind only moves eyes. Hack 5 enables face/jaw/mouth movement.
 
-Note [1] Bind will dupliocate head, eyes etc. Move duplicates to a clone folder and hide/disable that folder.
-Note [2] I bind with scale factor 1. 100will dissapear the mesh.
+Note [1] Bind will duplicate head, eyes etc. Move duplicates to a clone folder and hide/disable that folder.
+Note [2] I bind with scale factor 1. A scale of 100, may make the mesh dissappear.
 
-Note [3[ -Eyes won't move , neither teeth, tounge, unless the 3d objects are parented to respective armatures. Do the following.
+Note [3[ -Eyes won't move , neither teeth, tongue, unless the 3d objects are parented to respective armatures. 
+
+Do the following.
 My reminder written from memory for parenting eyes to eyes armature, teeth to teeth armature.: Select Mesh (origin to geom) > Shift + S > Cursor to Selected > Select Rig > Select Bonelayer > Select appropriate bone > Shift + S > Selected to Cursor > Select Mesh Again + Select Rig > Ctrl + P > Bone (Parent mesh, to rig)
 
-Note, bug when parenting takes place, object/child scales up , and relocates top screen. Solution is to scale backto appropriate, and manually relocate. To make things easier duplicae object before process, colour duplicate separately, like a bright purple, to make rematching of child easier, as duplicate would stay in place with default size.
+Note, bug when parenting takes place, object/child scales up , and relocates top screen. Solution is to scale back to appropriate, and manually relocate. To make things easier use duplicate objects from "Note[1] binding..." earlier, colour duplicate separately, like a bright purple, to make rematching of child easier, as duplicate would stay in place with default size.
 
 9. Hack for deletion of rouge bones: Some rouge bones caused animation to distort aeon human head very disturbingly. To fix this
-I programmatically removed these bones. Why? These bones in edit mode dissapeared, despite bones being checkedin overlay. See
-scripts : delete_rouge_bones.py and associated scripts in preprocessing_for_armature_weighting.py. You don't need to worry about these, as the scene was saved after deletion of these rouge bones.
+   
+I programmatically removed these bones. Why? These bones in edit mode dissapeared, despite bones being checked in overlay. 
+
+See scripts : delete_rouge_bones.py and associated scripts in preprocessing_for_armature_weighting.py. You don't need to worry about these, as the scene was saved after deletion of these rouge bones.
 
 
