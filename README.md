@@ -12,6 +12,8 @@
 
 # AuraHuman is an improvement of God's Bennett's [Cryptosynth Aeon product/NFT human project](https://github.com/g0dEngineer/Cryptosynth).
 
+AuraHuman Aeon is a reasonable use case given shortage of teachers.
+
 
 
 ![image](https://github.com/g0dEngineer/AURA_AEON_HUMAN/blob/main/screenshots/aura_human_face_rig_screenshot.png)
