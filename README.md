@@ -33,7 +33,7 @@
 # Setup AuraAeon (Warning somewhat long setup process in (2).)
 Ensure You have blender 2.91, and Python37 installed.
 
-1. Download AuraAeonHuman blender scene.
+1. Download AuraAeonHuman zip and extract.
 
 2. Follow python setup from my parent project; Cryptosynth: https://github.com/g0dEngineer/Cryptosynth#part-b---python-setup
 
