@@ -10,6 +10,7 @@
 # AuraHuman is an improvement of God's Bennett's [Cryptosynth Aeon product/NFT human project](https://github.com/g0dEngineer/Cryptosynth).
 
 
+![image](https://github.com/g0dEngineer/AURA_AEON_HUMAN/blob/main/screenshots/aura_human_face_rig_eye_movement_movie__annotated.gif)
 
 
 
@@ -58,7 +59,7 @@ Ensure You have blender 2.91, and Python37 installed.
 8. Setup done. See usage below.
 
 
-
+![image](https://github.com/g0dEngineer/AURA_AEON_HUMAN/blob/main/screenshots/aura_human_face_rig_screenshot_eye_bone.png)
 
 
 
@@ -96,7 +97,7 @@ b. i7600, integrated graphics chip, 128mb dedicated video memory. Response time 
 Also runs on i5 and i3, with around 6gb system ram, and 128mb dedicated video ram.
 
 
-
+![image](https://github.com/g0dEngineer/AURA_AEON_HUMAN/blob/main/screenshots/aura_human_face_rig_screenshot.png)
 
 
 # Dev Stack
