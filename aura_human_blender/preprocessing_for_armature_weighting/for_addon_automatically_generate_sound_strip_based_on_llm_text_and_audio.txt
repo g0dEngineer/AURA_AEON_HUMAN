@@ -1,0 +1,98 @@
+#Author God Bennett, Aura Aeon Human
+#Purpose: Dynamically generates lipsync based on latest text output speech from Aeon Human, and RhubarbLipSync
+
+import bpy
+
+#Set this in __init__ at AeonInitialization wrt sound_player working dir.This overrides this test dir here.
+WORKING_SOUND_STRIP_DIRECTORY = "C:\\Backup\\Downloads\\God\\RobotizeJA\\JAIA\\aura\\synth\\aura_human_0000\\aura_human_blender\\sounds"
+
+
+#############
+# Delete any existing sound strips
+# Select the sequencer editor
+bpy.context.area.type = 'SEQUENCE_EDITOR'
+
+# Get the sequencer data
+sequencer = bpy.context.scene.sequence_editor
+
+# Iterate through the strips and delete sounds
+for strip in sequencer.sequences:
+    if strip.type == 'SOUND':
+        sequencer.sequences.remove(strip)
+		
+		
+#############
+# Add new sound strip based on directory
+# Select the sequencer editor
+bpy.context.area.type = 'SEQUENCE_EDITOR'
+
+# Get the sequencer data
+sequencer = bpy.context.scene.sequence_editor
+
+# Add sound strip to the sequencer
+_sound_dir_file = WORKING_SOUND_STRIP_DIRECTORY + "\\speech.wav"
+bpy.ops.sequencer.sound_strip_add(filepath=_sound_dir_file, frame_start=1)
+
+
+
+
+#############
+# Select rig armature 
+# Name of the armature object
+armature_name = "FaceitRig"
+
+# Get the armature object by name
+armature_object = bpy.data.objects.get(armature_name)
+
+# Check if the armature object exists
+if armature_object is not None:
+    # Switch to Object Mode
+    bpy.ops.object.mode_set(mode='OBJECT')
+
+    # Deselect all objects first
+    bpy.ops.object.select_all(action='DESELECT')
+
+    # Select the armature object
+    armature_object.select_set(True)
+
+    # Set the armature object as the active object
+    bpy.context.view_layer.objects.active = armature_object
+
+    # Switch to Pose Mode
+    bpy.ops.object.mode_set(mode='POSE')
+
+    print(f"Armature '{armature_name}' selected and switched to Pose Mode.")
+else:
+    print(f"Armature '{armature_name}' not found.")
+
+
+	
+
+#############
+# Toggle Rhubarb Button to auto gen lipsync animation based on manually made pose library of core expressions
+# Execute the operator
+bpy.ops.object.rhubarb_lipsync()
+print("Button pressed successfully.")
+
+
+
+
+
+#############
+# Play blender sequencer from frame 1
+# Select the sequencer editor
+bpy.context.area.type = 'SEQUENCE_EDITOR'
+
+# Get the sequencer data
+sequencer = bpy.context.scene.sequence_editor
+
+# Iterate through the sound strips
+for strip in sequencer.sequences:
+    if strip.type == 'SOUND':
+        strip.frame_final_start = 1  # Set the start frame to 1
+
+# Set the current frame to 1
+bpy.context.scene.frame_set(1)
+
+# Play the animation
+bpy.ops.screen.animation_play()
