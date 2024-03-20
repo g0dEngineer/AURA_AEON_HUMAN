@@ -5,7 +5,11 @@
 
 # Aura Human gives users from kids to uwi graduates, the chance to interact with a more humanized form of LLMs, and gets students hands dirty in setting up Aeon themselves.
 
+# We want to bring Aeon to interactive more teachers' computers, Public Kiosks and Personal Student Laptops.
+
 # AuraHuman is an improvement of God's Bennett's [Cryptosynth Aeon product/NFT human project](https://github.com/g0dEngineer/Cryptosynth).
+
+
 
 
 
@@ -19,6 +23,7 @@
 
 * Aura Aeon Human doesn't need any APIs, because it runs on a quantized locally stored pretrained "brain" based on gpt2.
 
+# Aura Human is open source.
 
 
 
