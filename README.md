@@ -1,4 +1,8 @@
 
+
+![image](https://github.com/g0dEngineer/AURA_AEON_HUMAN/blob/main/screenshots/aura_human_face_rig_eye_movement_movie__annotated.gif)
+
+
 # Who is AuraHuman?
 
 # AuraHuman is Jamaica's 1st interactive 3d humanoid teaching assistant/artificial friend.
@@ -10,7 +14,8 @@
 # AuraHuman is an improvement of God's Bennett's [Cryptosynth Aeon product/NFT human project](https://github.com/g0dEngineer/Cryptosynth).
 
 
-![image](https://github.com/g0dEngineer/AURA_AEON_HUMAN/blob/main/screenshots/aura_human_face_rig_eye_movement_movie__annotated.gif)
+
+![image](https://github.com/g0dEngineer/AURA_AEON_HUMAN/blob/main/screenshots/aura_human_face_rig_screenshot.png)
 
 
 
@@ -35,6 +40,8 @@
 Ensure You have blender 2.91, and Python37 installed.
 
 1. Download AuraAeonHuman zip and extract.
+
+1.b. The scene is too big for github, so download and place in extracted folder (1) above: https://drive.google.com/file/d/1frAod3JDvGD5rBhB2DN-wp3ka-PB3YR_/view
 
 2. Follow python setup from my parent project; Cryptosynth: https://github.com/g0dEngineer/Cryptosynth#part-b---python-setup
 
