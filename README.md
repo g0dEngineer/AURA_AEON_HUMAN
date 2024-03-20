@@ -103,6 +103,8 @@ b. i7600, integrated graphics chip, 128mb dedicated video memory. Response time 
 
 Also runs on i5 and i3, with around 6gb system ram, and 128mb dedicated video ram.
 
+c. 700 mb space.
+
 
 ![image](https://github.com/g0dEngineer/AURA_AEON_HUMAN/blob/main/screenshots/aura_human_face_rig_screenshot.png)
 
