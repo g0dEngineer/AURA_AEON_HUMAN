@@ -1,6 +1,7 @@
 
 ![image](https://github.com/g0dEngineer/AURA_AEON_HUMAN/blob/main/screenshots/aura_human_face_rig_eye_movement_movie__annotated.gif)
 
+Youtube: https://youtu.be/kCWwG6jMMf8
 
 # Who is AuraHuman?
 
