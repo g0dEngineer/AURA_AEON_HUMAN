@@ -110,7 +110,7 @@ c. 700 mb space.
 ![image](https://github.com/g0dEngineer/AURA_AEON_HUMAN/blob/main/screenshots/aura_human_face_rig_screenshot.png)
 
 
-# Dev Stack
+# Dev Stack, Background details for contributing to and improving Aeon
 Fusion of several tech stacks
 
 1. Hack: Custom blender3d 2.91 plugin to integrate standard py3.7 torch conversational pretrained large language ai model into blender ux
