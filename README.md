@@ -61,10 +61,11 @@ Ensure You have blender 2.91, and Python37 installed.
 	3.e: Install pygame:  python -m pip install pygame. This enables playing of ambience files
 	
 5. Prepare aura_human_blender_plugin.zip.
-	* Extract, navigate to utils.py file, and change the tempdir portion that applies to your machine. "C:/Users/18765/"
- 	* Zip the plugin, ensure all files are in one folder. Don't nest by having the plugin files in a subfolder. Ensure by going into root level of plugin, where py files are including utils, and seelct all and zip from there.
- 	* Now zip plugin data again. (Apologies for this flow. This ai model param could have been made into a customizable param hence requiring no re-zipping, like my working sound param in this plugin, maybe in a later update :)
- 	* Open blender > Edit > Preferences > Addons > Navigate to zip in aeon folder/addons.
+	i Extract, navigate to utils.py file, and change the tempdir portion that applies to your machine. "C:/Users/18765/"
+ 	ii Zip the plugin, ensure all files are in one folder. 
+ 	iii Now zip plugin data again. (Apologies for this flow. This ai model param could have been made into a customizable param hence requiring no re-zipping, like my working sound param in this plugin, maybe in a later update :)
+ 	iv Open blender > Edit > Preferences > Addons > Navigate to zip in aeon folder/addons.
+
 
 7. At the plugin section, give AuraAeon a place to establish a working speech file directory, where speech is generated and converted to facial  expressions.
 
