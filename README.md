@@ -61,9 +61,13 @@ Ensure You have blender 2.91, and Python37 installed.
 	3.e: Install pygame:  python -m pip install pygame. This enables playing of ambience files
 	
 5. Prepare aura_human_blender_plugin.zip.
+   
 	i Extract, navigate to utils.py file, and change the tempdir portion that applies to your machine. "C:/Users/18765/"
- 	ii Zip the plugin, ensure all files are in one folder. 
+
+ 	ii Zip the plugin, ensure all files are in one folder.
+
  	iii Now zip plugin data again. (Apologies for this flow. This ai model param could have been made into a customizable param hence requiring no re-zipping, like my working sound param in this plugin, maybe in a later update :)
+
  	iv Open blender > Edit > Preferences > Addons > Navigate to zip in aeon folder/addons.
 
 
