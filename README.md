@@ -46,8 +46,9 @@ Ensure You have blender 2.91, and Python37 installed.
 1.b. The scene is too big for github, so download and place in extracted folder (1) above: https://drive.google.com/file/d/1frAod3JDvGD5rBhB2DN-wp3ka-PB3YR_/view
 
 2. Follow python setup from my parent project; Cryptosynth: https://github.com/g0dEngineer/Cryptosynth#part-b---python-setup
+   * Alternatively, you could download [my already prepared Blender 2.91 instance fully setup with the hacks and requirements](https://drive.google.com/file/d/1NH62ZbV0K82jCSXzHTwOgtRPeCYI5wmZ/view?usp=drive_link).
 
-3. Open a new cmd, and set path as the blender instance of python 2.91.
+4. Open a new cmd, and set path as the blender instance of python 2.91.
 
 	3.a: Example: path=C:\Program Files\Blender Foundation\Blender 2.91\2.91\python\bin
    
@@ -59,13 +60,17 @@ Ensure You have blender 2.91, and Python37 installed.
    
 	3.e: Install pygame:  python -m pip install pygame. This enables playing of ambience files
 	
-5. Install aura_human_blender_plugin.zip. Don't extract, open blender > Edit > Preferences > Addons > Navigate to zip in aeon folder/addons.
+5. Prepare aura_human_blender_plugin.zip.
+	* Extract, navigate to utils.py file, and change the tempdir portion that applies to your machine. "C:/Users/18765/"
+ 	* Zip the plugin, ensure all files are in one folder. Don't nest by having the plugin files in a subfolder. Ensure by going into root level of plugin, where py files are including utils, and seelct all and zip from there.
+ 	* Now zip plugin data again. (Apologies for this flow. This ai model param could have been made into a customizable param hence requiring no re-zipping, like my working sound param in this plugin, maybe in a later update :)
+ 	* Open blender > Edit > Preferences > Addons > Navigate to zip in aeon folder/addons.
 
-6. At the plugin section, give AuraAeon a place to establish a working speech file directory, where speech is generated and converted to facial  expressions.
+7. At the plugin section, give AuraAeon a place to establish a working speech file directory, where speech is generated and converted to facial  expressions.
 
-7. Install blender-rhubarb-lipsync-windows-3.0.1.zip. Don't extract, open blender > Edit > Preferences > Addons > Navigate to zip in aeon folder/addons.
+8. Install blender-rhubarb-lipsync-windows-3.0.1.zip. Don't extract, open blender > Edit > Preferences > Addons > Navigate to zip in aeon folder/addons.
 
-8. Setup done. See usage below.
+9. Setup done. See usage below.
 
 
 ![image](https://github.com/g0dEngineer/AURA_AEON_HUMAN/blob/main/screenshots/aura_human_face_rig_screenshot_eye_bone.png)
